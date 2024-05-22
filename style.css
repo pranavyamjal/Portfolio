@@ -67,7 +67,10 @@ a:hover
 
 .logo
 {
-    height: 70px;
+    height: auto;
+    max-height: 50px; /* Adjust the max-height to fit your navbar */
+    width: auto;
+    max-width: 150px; /* Optional: limit the width */
     
 }
 
