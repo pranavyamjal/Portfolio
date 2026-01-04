@@ -51,6 +51,7 @@
     }
     .btn {
       width: 100%;
+      display: flex;
     }
     #profile {
       flex-direction: column;
@@ -107,6 +108,14 @@
   }
   
   @media screen and (max-width: 600px) {
+    /* Disable animations/transitions on mobile to prevent flicker */
+    *, *::before, *::after {
+      animation: none !important;
+      transition: none !important;
+    }
+    .section_pic:hover {
+      transform: none;
+    }
     #contact,
     footer {
       height: fit-content;
