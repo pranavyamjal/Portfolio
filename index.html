@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 
-    <title>PRANAV YAMJAL</title>
-
+    <title>Pranav Yamjal - Software Engineer | Portfolio 2.0</title>
+    <meta name="description" content="Pranav Yamjal - Software Engineer specializing in Full Stack Development with Node.js, React, and Angular">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+  <div id="top"></div>
 
-    <nav id="desktop-nav">
+  <nav id="desktop-nav">
 
         <div>
             <img class="logo" src="./Logo.png" alt="logo">
@@ -23,8 +28,10 @@
         <div>
             <ul class="nav-links">
 
-                <li><a id="nav-link" href="#index">HOME</a></li>
+                <li><a id="nav-link" href="#top">HOME</a></li>
                 <li><a id="nav-link" href="#about">ABOUT</a></li>
+                <li><a id="nav-link" href="#experience">SKILLS</a></li>
+                <li><a id="nav-link" href="#work-experience">EXPERIENCE</a></li>
                 <li><a id="nav-link" href="#projects">PROJECTS</a></li>
                 <li><a id="nav-link" href="#contact">CONTACT</a></li>
             </ul>
@@ -41,7 +48,10 @@
             </div>
 
             <div class="menu-links">
+              <li><a href="#top" onclick="toggleMenu()">HOME</a></li>
                 <li><a href="#about" onclick="toggleMenu()">ABOUT</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">SKILLS</a></li>
+                <li><a href="#work-experience" onclick="toggleMenu()">EXPERIENCE</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">PROJECTS</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">CONTACT</a></li>
             </div>
@@ -55,188 +65,211 @@
         </div>
 
         <div class="section_text ">
-            <p class="section_text_p1"> Hello, I'm</p>
-            <h1 class="title"> Pranav Yamjal </h1>
-            <p class="section_text_p2"> Web Developer</p>
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Pranav Yamjal</h1>
+            <p class="section_text_p2">Software Engineer | Full Stack Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Pranav Yamjal Resume.pdf')"> Downlad CV
-                </button>
+              <a class="btn btn-color-2" href="./assets/Pranav_Yamjal_CV.pdf" download>
+                <i class="fa-solid fa-download"></i> Download CV
+              </a>
 
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me
-                </button>
+              <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                <i class="fa-solid fa-envelope"></i> Contact Me
+              </button>
             </div>
 
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/pranav-yamjal-ab27201a1/'" />
-
-                <img src="./assets/github.png" alt="GitHub Profile" class="icon"
-                    onclick="location.href='https://github.com/Pranavyamjal'" />
+                <a href="https://www.linkedin.com/in/pranav-yamjal-ab27201a1/" target="_blank" class="social-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Pranavyamjal" target="_blank" class="social-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
         </div>
     </section>
 
 
     <section id="about">
-        <p class="section_text_p1"> Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section_pic-container">
-                <img src="./assets/aboutpic.jpeg" alt="Profile Picture" class="about-pic" />
-            </div>
-
-
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/exp.png" alt="experience" class="icon" />
-                        <h3>Certifications</h3>
-                        <p>Google UX Design Professional Certificate <br />2024</p>
-                    </div>
-
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon" />
-                        <h3>Education</h3>
-                        <p> 12th Science (Bifocal.CS)<br>B.Sc. Computer Science</p>
+        <p class="section_text_p1">Profile</p>
+        <h1 class="title">About & Current Work</h1>
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-card-header">
+                    <i class="fa-solid fa-briefcase icon-large"></i>
+                    <div>
+                        <h3>Work @ OneGreenDiary</h3>
+                        <p class="muted">Software Engineer · Jan 2025 - Present</p>
                     </div>
                 </div>
+                <p class="body-text">I build real-time, scalable systems with Node.js, Express, TypeScript, Angular, React, MongoDB, MySQL, and PostgreSQL. I focus on REST APIs, WebSocket features, POS integrations, and production-grade performance.</p>
+                <div class="pill-list">
+                    <span class="pill">Node.js</span>
+                    <span class="pill">Express</span>
+                    <span class="pill">TypeScript</span>
+                    <span class="pill">Angular</span>
+                    <span class="pill">React</span>
+                    <span class="pill">MongoDB</span>
+                    <span class="pill">MySQL</span>
+                    <span class="pill">PostgreSQL</span>
+                </div>
+            </div>
 
-                <div class="text-container">
-                    <p>
-                        As a college student studying Computer Science, software development and design, I am excited to apply my
-                        technical skills and creative problem-solving abilities to real-world projects. I have a strong foundation in
-                        computer science and a passion for building intuitive and visually appealing applications.
-                    </p>
+            <div class="info-card">
+                <div class="info-card-header">
+                    <i class="fa-solid fa-list-check icon-large"></i>
+                    <h3>Current Work</h3>
+                </div>
+                <ul class="info-list">
+                    <li>POS systems and printing (ESC/POS)</li>
+                    <li>Restaurant Captain App (Angular + WebSocket + TypeScript + MongoDB)</li>
+                    <li>DevOps: Grafana, AWS</li>
+                    <li>Payments & Integrations: PhonePe, Razorpay, Zomato Orders</li>
+                    <li>Quick / e-commerce platform maintenance</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <div class="info-card-header">
+                    <i class="fa-solid fa-user icon-large"></i>
+                    <h3>About Me</h3>
+                </div>
+                <p class="body-text">I’m Pranav Yamjal, B.Sc CS graduate from Pune, India. I enjoy building clean, efficient backends and practical real-world applications.</p>
+                <blockquote class="quote">“Writing code is easy — building useful solutions is the real skill.”</blockquote>
+            </div>
+
+            <div class="info-card">
+                <div class="info-card-header">
+                    <i class="fa-solid fa-bullseye icon-large"></i>
+                    <h3>Goals</h3>
+                </div>
+                <ul class="info-list">
+                    <li>Grow as a Backend / Full-Stack Engineer</li>
+                    <li>Ship impactful tools & SaaS products</li>
+                    <li>Keep learning cloud, observability, and performance</li>
+                </ul>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+
+    <section id="experience">
+        <p class="section_text_p1">Skills & Tech Stack</p>
+        <h1 class="title">What I Work With</h1>
+        <div class="card-grid">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Programming Languages</h2>
+                <div class="pill-list">
+                <span class="pill"><i class="fa-brands fa-js"></i>JavaScript</span>
+                <span class="pill"><i class="fa-brands fa-python"></i>Python</span>
+                <span class="pill"><i class="fa-brands fa-golang"></i>Go</span>
+                </div>
+            </div>
+
+            <div class="details-container">
+                <h2 class="experience-sub-title">Backend Development</h2>
+                <div class="pill-list">
+                <span class="pill"><i class="fa-brands fa-node-js"></i>Node.js</span>
+                <span class="pill"><i class="fa-solid fa-code"></i>Express</span>
+                <span class="pill"><i class="fa-solid fa-leaf"></i>Django</span>
+                <span class="pill"><i class="fa-solid fa-bolt"></i>FastAPI</span>
+                </div>
+            </div>
+
+            <div class="details-container">
+                <h2 class="experience-sub-title">Database</h2>
+                <div class="pill-list">
+                <span class="pill"><i class="fa-solid fa-database"></i>PostgreSQL</span>
+                <span class="pill"><i class="fa-solid fa-leaf"></i>MongoDB</span>
+                <span class="pill"><i class="fa-solid fa-rotate"></i>Redis</span>
+                </div>
+            </div>
+
+            <div class="details-container">
+                <h2 class="experience-sub-title">DevOps & Cloud</h2>
+                <div class="pill-list">
+                <span class="pill"><i class="fa-brands fa-docker"></i>Docker</span>
+                <span class="pill"><i class="fa-brands fa-aws"></i>AWS</span>
+                <span class="pill"><i class="fa-solid fa-network-wired"></i>Kubernetes</span>
+                </div>
+            </div>
+
+            <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="pill-list">
+                <span class="pill"><i class="fa-brands fa-react"></i>React</span>
+                <span class="pill"><i class="fa-brands fa-angular"></i>Angular</span>
+                <span class="pill"><i class="fa-solid fa-n"></i>Next.js</span>
+                <span class="pill"><i class="fa-solid fa-wind"></i>Tailwind</span>
+                <span class="pill"><i class="fa-brands fa-html5"></i>HTML</span>
+                <span class="pill"><i class="fa-brands fa-css3-alt"></i>CSS</span>
+                </div>
+            </div>
+
+            <div class="details-container">
+                <h2 class="experience-sub-title">AI / ML</h2>
+                <div class="pill-list">
+                <span class="pill"><i class="fa-solid fa-brain"></i>TensorFlow</span>
+                <span class="pill"><i class="fa-solid fa-fire"></i>PyTorch</span>
+                <span class="pill"><i class="fa-solid fa-table"></i>Pandas</span>
+                </div>
+            </div>
+
+            <div class="details-container">
+                <h2 class="experience-sub-title">Testing</h2>
+                <div class="pill-list">
+                <span class="pill"><i class="fa-solid fa-vial"></i>Jest</span>
+                <span class="pill"><i class="fa-solid fa-robot"></i>Selenium</span>
+                </div>
+            </div>
+
+            <div class="details-container">
+                <h2 class="experience-sub-title">Tools & Software</h2>
+                <div class="pill-list">
+                <span class="pill"><i class="fa-solid fa-code"></i>VS Code</span>
+                <span class="pill"><i class="fa-brands fa-git-alt"></i>Git</span>
+                <span class="pill"><i class="fa-solid fa-paper-plane"></i>Postman</span>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-    </section>
-    <section id="experience">
-        <p class="section_text_p1">Explore My</p>
-        <h1 class="title">Technical Skills</h1>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#work-experience'"
+        />
+      </section>
+
+      <!-- WORK EXPERIENCE SECTION -->
+      <section id="work-experience">
+        <p class="section_text_p1">My Professional Journey</p>
+        <h1 class="title">Work Experience</h1>
         <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-sub-title">Frontend Development</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>HTML</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>CSS</h3>
-                    <p>Experienced</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>JavaScript</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Bootstrap</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>XML (Extensible Markup Language)</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>Figma & Material UI</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
+          <div class="work-experience-container">
+            
+            <!-- Main Work Experience -->
+            <div class="details-container work-card">
+              <div class="work-header">
+                <h2 class="experience-sub-title">Software Engineer</h2>
+                <p class="company-name">OneGreenDiary Software Pvt Ltd</p>
+                <p class="work-duration">Jan 2025 - Present | PCMC, Maharashtra</p>
+              </div>
+              <div class="work-achievements">
+                <div class="achievement-item">
+                  <i class="fa-solid fa-circle-check achievement-icon"></i>
+                  <p>Designed and implemented a real-time Kitchen Order Ticket (KOT) generation system by upgrading the Captain App from long polling to WebSocket technology, decreasing printing status latency from 10 seconds to instantaneous updates, resulting in improved kitchen workflow efficiency for over 200 restaurant locations.</p>
+                </div>
+                <div class="achievement-item">
+                  <i class="fa-solid fa-circle-check achievement-icon"></i>
+                  <p>Collaborated on a billable enterprise project utilizing Next.js and React, processing over 15,000 complex calculation inputs monthly to generate dynamic PDF reports, enhancing reporting accuracy and reducing manual processing time by 40% for a global membrane water treatment leader.</p>
+                </div>
+                <div class="achievement-item">
+                  <i class="fa-solid fa-circle-check achievement-icon"></i>
+                  <p>Led backend development efforts within a cross-functional team building an integrated E-Commerce Ecosystem comprising Customer, Delivery, and Admin applications; optimized Node.js server performance to support more than 50,000 concurrent users per day while maintaining sub-200ms response times across all modules.</p>
+                </div>
               </div>
             </div>
-            <div class="details-container">
-              <h2 class="experience-sub-title">Backend Development</h2>
-              <div class="article-container">
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>PostgresSQL</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>MySQL</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>PHP</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>UML (Unified Modeling Language)</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-              </div>
-            </div>
+
           </div>
         </div>
         <img
@@ -246,84 +279,99 @@
           onclick="location.href='./#projects'"
         />
       </section>
+
       <section id="projects">
-        <p class="section_text_p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
+        <p class="section_text_p1">Browse My</p>
+        <h1 class="title">Key Projects</h1>
         <div class="experience-details-container">
           <div class="about-containers">
+            <!-- Project 1: ECOM & Quick Commerce -->
             <div class="details-container color-container">
               <div class="article-container">
                 <img
-                  src="./assets/project-1.png"
-                  alt="Project 1"
+                  src="https://images.pexels.com/photos/5076511/pexels-photo-5076511.jpeg"
+                  alt="E-Commerce and Quick Commerce platform screenshot"
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">ITGUIDE - A Web Application for Travel Enthusiasts.</h2>
+              <h2 class="experience-sub-title project-title">ECOM & Quick Commerce Platform</h2>
+              <p class="project-description">Multi-module commerce platform (Customer, Delivery, Admin) handling 50k+ daily users, optimized for sub-200ms APIs, fast checkout, and reliable order routing.</p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">Express</span>
+                <span class="tech-badge">MongoDB</span>
+                <span class="tech-badge">Redis</span>
+              </div>
               <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/pranavyamjal/ITGUIDE'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://www.linkedin.com/posts/pranav-yamjal-ab27201a1_itguide-a-comprehensive-web-application-activity-7194232707168514049-71WU?utm_source=share&utm_medium=member_desktop'"
-                >
-                  Live Demo
-                </button>
+                <button class="btn btn-color-2 project-btn">Performance: 50k+ users/day</button>
               </div>
             </div>
+
+            <!-- Project 2: POS Systems -->
             <div class="details-container color-container">
               <div class="article-container">
                 <img
-                  src="./assets/project-2.png"
-                  alt="Project 2"
+                  src="https://images.pexels.com/photos/12935088/pexels-photo-12935088.jpeg"
+                  alt="POS systems and receipt printing"
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">
-                Water Tank Management System Using Whatsapp</h2>
+              <h2 class="experience-sub-title project-title">POS Systems & ESC/POS Printing</h2>
+              <p class="project-description">Built and hardened POS backends with reliable ESC/POS printing, receipt templating, store/device management, and observability for nationwide rollouts.</p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">ESC/POS</span>
+                <span class="tech-badge">Grafana</span>
+              </div>
               <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/pranavyamjal/The-Water-Tank-Management-System'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/pranavyamjal/The-Water-Tank-Management-System'"
-                >
-                  Live Demo
-                </button>
+                <button class="btn btn-color-2 project-btn">Latency: sub-second prints</button>
               </div>
             </div>
+
+            <!-- Project 3: Captain App Server -->
             <div class="details-container color-container">
               <div class="article-container">
                 <img
-                  src="./assets/project-3.png"
-                  alt="Project 3"
+                  src="https://images.pexels.com/photos/4921020/pexels-photo-4921020.jpeg"
+                  alt="Captain App Server with WebSocket integration"
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">UX Prototype of Bakery App</h2>
+              <h2 class="experience-sub-title project-title">Captain App Server - WebSocket Integration</h2>
+              <p class="project-description">Real-time KOT pipeline with WebSockets replacing long polling; achieved instantaneous ticket printing and 50% faster order throughput across 200+ locations.</p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">WebSocket</span>
+                <span class="tech-badge">Angular</span>
+              </div>
               <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://www.figma.com/proto/I7GTL7wspta60IpqnenJv9/Untitled?type=design&node-id=1-2&t=IShNjIrpKfKOcJn0-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design'"
-                >
-                  Lo-Fi
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://www.figma.com/py/hi-fi'"
-                >
-                  Hi-Fi
-                </button>
+                <button class="btn btn-color-2 project-btn">Latency: 0s KOT print</button>
               </div>
             </div>
+
+            <!-- Project 4: API Integrations -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="https://images.pexels.com/photos/16592498/pexels-photo-16592498.jpeg"
+                  alt="API integrations for payments and orders"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">API Integrations - Payments & Orders</h2>
+              <p class="project-description">Integrated PhonePe, Razorpay, Zomato, Swiggy, and HubSpot APIs with secure webhooks, retries, and reconciliation flows for payment and order lifecycles.</p>
+              <div class="project-tech-stack">
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">REST</span>
+                <span class="tech-badge">Webhooks</span>
+                <span class="tech-badge">Security</span>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn">Uptime: 99.9% integrations</button>
+              </div>
+            </div>
+
           </div>
         </div>
         <img
@@ -338,39 +386,23 @@
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
           <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:Pranavyamjal@gmail.com">Pranavyamjal@gmail.com</a></p>
+            <i class="fa-solid fa-envelope icon-large contact-icon"></i>
+            <p><a href="mailto:pranavyamjal.webdev@gmail.com">pranavyamjal.webdev@gmail.com</a></p>
           </div>
           <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com/in/pranav-yamjal-ab27201a1/">LinkedIn</a></p>
+            <i class="fa-brands fa-linkedin icon-large contact-icon"></i>
+            <p><a href="https://www.linkedin.com/in/pranav-yamjal-ab27201a1/" target="_blank">LinkedIn</a></p>
           </div>
         </div>
       </section>
       <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Technical Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-        <p>Copyright &#169; 2024 Pranav Yamjal. All Rights Reserved.</p>
+        <p>© 2025 Pranav Yamjal. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/pranav-yamjal-ab27201a1/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Pranavyamjal" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:pranavyamjal.webdev@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
       </footer>
       <script src="script.js"></script>
-    </body>
-  </html>
 </body>
-
 </html>
